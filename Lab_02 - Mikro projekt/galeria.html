@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - Galeria</title>
+    <link rel="icon" type="image-x/icon" href="images/pageLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js" defer></script>
+</head>
+<body>
+
+    <header class="top">
+        <div class="clock"></div>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="specyfikacja.html">Specyfikacja</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- <header class="text-animation title" id="title">
+        <h2 class="subpage-title">Galeria zdjęć Tesli Roadster</h2>
+    </header> -->
+    <main class="gallery">
+        <img src="images/img1.jpg" alt="Tesla img 1">
+        <img src="images/img2.jpg" alt="Tesla img 2">
+        <img src="images/img3.jpg" alt="Tesla img 3">
+        <img src="images/img4.jpg" alt="Tesla img 4">
+        <img src="images/img5.jpg" alt="Tesla img 5">
+        <img src="images/img6.jpg" alt="Tesla img 6">
+
+        <div class="video-container">
+            <video controls>
+                <source src="images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h4 class="comment">
+                Z Teslą możesz odkrywać nieznane!
+                <br>Umów się na jazdę próbną już dziś -> <br>Wypełnij 
+                <button id="go-to-contact-form" onclick="goToContactForm()">formularz kontaktowy</button>
+            </h4>
+        <div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Katarzyna Bęben</p>
+    </footer>
+</body>
+</html>
