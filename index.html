@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - Strona Główna</title>
+    <link rel="icon" type="image-x/icon" href="images/pageLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js" defer></script>
+</head>
+<body>
+
+    <header class="top">
+        <div class="clock"></div>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenuMain()">☰</div>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="specyfikacja.html">Specyfikacja</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text-animation" id="animation-1">
+        <p class="animationString">Tesla Roadster</p>
+    </div>
+
+    <main class="mainPageContent">
+        <div class="main-page-text-container">
+            <section class="mainPageText">
+                <p class="animationString" style="transform: scale(1.2)">Tesla Roadster</p>
+                <h1 style="text-align: center; text-shadow: 0 0 25px lightblue;">Model Nowej Generacji</h1>
+                <p> Twoja przygoda zaczyna się tutaj!</p>
+                <button class="button" onclick="goToSpecification()">Specyfikacja techniczna</button>
+                <button class="button" onclick="goToGallery()">Galeria</button>
+                <button class="button" onclick="goToContactForm()">Formularz kontaktowy</button>
+            </section>
+            <section class="more">
+                <hr>
+                <h4>W ofercie również:</h4>
+                <section class="more-models">
+                    <div class="panel"><img src="images/model_S.jpg" id="model-S"><h3>Model S</h3></div>
+                    <div class="panel"><img src="images/cybertruck.jpg" id="cybertruck"><h3>Cybertruck</h3></div>
+                    <div class="panel"><img src="images/model_3.jpg"  id="model-3"><h3>Model 3</h3></div>
+                    <div class="panel"><img src="images/model_X.jpg" id="model-X"><h3>Model X</h3></div>
+                    <div class="panel"><img src="images/model_Y.jpg" id="model-Y"><h3>Model Y</h3></div>
+                </section>
+            </section>
+        </div>
+        <section class="mainPageImgContainer">
+            <img src="images/main.jpg" alt="Tesla" class="main-image">
+        </section>
+    </main>
+
+    <div class="text-animation" id="animation-2">
+        <p class="animationString">Tesla Roadster</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Katarzyna Bęben</p>
+    </footer>
+</body>
+</html>
