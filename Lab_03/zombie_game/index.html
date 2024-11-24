@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>ZOMBIE GAME</title>
+    <link rel="shortcut icon" href="images/logo.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+  </head>
+  <body>
+    <div id = "popup" class="hidden">
+        <h1>Game Over!</h1>
+        <button id="restart-button">Play Again</button>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <audio id="sad-music" src="images/sad-music.mp3" loop></audio>
+    <audio id="shot-sound" src="images/shot_sound.mp3"></audio>
+    <div id="crosshair">
+      <img src="./images/aim.png" id="aimImg">
+    </div>
+  </body>
+</html>

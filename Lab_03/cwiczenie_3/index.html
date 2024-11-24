@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <div class="filter">
+        <input type="text" id="searchInput" placeholder="Filter by text">
+        <select id="select">
+            <option value="originalOrder">Original Order</option>
+            <option value="ascendingOrder">Ascending</option>
+            <option value="descendingOrder">Descending</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="tableContent">
+        </tbody>
+    </table>
+</body>

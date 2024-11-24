@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <h1>GENERATOR HASEŁ</h1>
+    <form class="form" id="form">
+        <label>Minimalna długość hasła</label>
+        <input type="text" id="minLength" name="length" required pattern="[0-9]+" placeholder="number">
+        <label>Maksymalna długość hasła</label>
+        <input type="text" id="maxLength" name="length" required pattern="[0-9]+" placeholder="number">
+        <label>Czy hasło ma zawierać wielkie litery?</label>
+        <input type="checkbox" id="capitalLetters" name="capitalLetters" value="Zawiera wielkie litery">
+        <label>Czy hasło ma zawierać znaki specjalne?</label>
+        <input type="checkbox" id="specialCharacters" name="specialCharacters" value="Zawiera znaki specjalne">
+        <button type="submit">WYGENERUJ HASŁO</button>
+    </form>
+
+</body>
