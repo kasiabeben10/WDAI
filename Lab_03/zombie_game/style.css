@@ -47,10 +47,10 @@ button {
 #crosshair {
     position: absolute;
     z-index: 1000;
-    width: 15%; /* Dopasuj do rozmiaru obrazu */
-    height: auto; /* Dopasuj do rozmiaru obrazu */
-    pointer-events: none; /* Ignorowanie zdarzeń kliknięcia na kursor */
-    transform: translate(-50%, -50%); /* Ustawienie kursora na środek obrazu */
+    width: 15%;
+    height: auto;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
   }
 #aimImg {
     width: 100%;
