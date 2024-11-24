@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.form {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+}
+button {
+    width: 150px;
+    height: 50px;;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    transform: scale(1.05);
+}
