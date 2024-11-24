@@ -8,8 +8,21 @@
     <script src="js.js" defer></script>
   </head>
   <body>
-    <div id = "popup" class="hidden">
+    <div id = "startPopup" class="popup">
+      <h1>Hello in our Zombie World!</h1>
+      <div class="one-line-container">
+        <h2>Select hard level:</h2>
+        <select id="select">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+      </select>
+    </div>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id = "popup" class="popup hidden">
         <h1>Game Over!</h1>
+        <h2 id = "yourScore"></h2>
         <button id="restart-button">Play Again</button>
     </div>
     <canvas id="myCanvas"></canvas>

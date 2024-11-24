@@ -3,11 +3,13 @@ const ctx = canvas.getContext("2d");
 const sadMusic = document.getElementById("sad-music");
 const shotSound = document.getElementById("shot-sound");
 const popup = document.getElementById("popup");
+const startPopup = document.getElementById("startPopup");
 const restartButton = document.getElementById("restart-button");
+const startButton = document.getElementById("start-button");
 const crosshair = document.getElementById("crosshair");
+const select = document.getElementById('select');
 const spriteWidth = 1800;
 const spriteHeight = 312;
-const newZombieTime = 1500 //1 zombie co 1,5s
 let mouseX = 0;
 let mouseY = 0;
 let score = 0;
@@ -33,7 +35,22 @@ window.addEventListener('resize', resizeCanvas);
 function crosshairMove(e){
     crosshair.style.top = e.pageY + "px"
     crosshair.style.left = e.pageX + "px"
-  }
+}
+
+let hardLevel = 1;
+select.addEventListener('change', setLevel);
+function setLevel(){
+    const selectedOption = select.value;
+    if (selectedOption === 'easy') {
+        hardLevel = 1;
+    } else if (selectedOption === 'medium') {
+        hardLevel = 2;
+    } else if (selectedOption === 'hard') {
+        hardLevel = 3;
+    }
+}
+
+const newZombieTime = 800/hardLevel;
 
 
 function drawScoreAndLives(ctx, lives, score) {
@@ -74,12 +91,12 @@ function drawScoreAndLives(ctx, lives, score) {
 
 class Zombie {
     constructor() {
-        this.scale = canvas.width/1200 * Math.random() * 2 + 0.8;
+        this.scale = canvas.width/1300 * Math.random() * 2 + 0.8;
         this.width = 80 * this.scale;
         this.height = 100 * this.scale;
         this.x = canvas.width;
         this.y = Math.random() * (canvas.height - this.height);
-        this.speed = Math.random() * 3 + 1;
+        this.speed = hardLevel * 0.8 * canvas.width/1300 * (Math.random() * 4  + hardLevel);
         this.frame = 0; 
         this.frameCount = 10; 
         this.steps = 0;
@@ -153,6 +170,8 @@ function startGame(){
 }
 
 function endGame() {
+    let el = document.getElementById("yourScore");
+    el.innerText = 'Your score is: ' + score;
     gameOver = true;
     sadMusic.play();
     popup.classList.remove('hidden');
@@ -184,9 +203,9 @@ restartButton.addEventListener('click', () => {
     startGame();
 });
 
-zombieSprite.onload = () => {
+startButton.addEventListener('click', () => {
+    startPopup.classList.add('hidden');
     startGame();
-}
-
+});
 
 
