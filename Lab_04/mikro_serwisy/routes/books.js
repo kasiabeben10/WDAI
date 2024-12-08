@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Books = require('../data_models/booksdb');
+const authenticateToken = require('../middleware/auth');
 
 // GET /api/books - wszystkie książki
 router.get('/books', async (req, res) => {
@@ -27,7 +28,7 @@ router.get('/books/:id', async (req, res) => {
 });
 
 // POST /api/books - dodawanie nowej książki
-router.post('/books', async (req, res) => {
+router.post('/books', authenticateToken, async (req, res) => {
   try {
     const { title, author, year } = req.body;
     if (!title || !author || !year) {
@@ -42,7 +43,7 @@ router.post('/books', async (req, res) => {
 });
 
 // DELETE /api/books/:id - usuwanie książki
-router.delete('/books/:id', async (req, res) => {
+router.delete('/books/:id', authenticateToken, async (req, res) => {
   try {
     const book = await Books.findByPk(req.params.id);
     if (book) {

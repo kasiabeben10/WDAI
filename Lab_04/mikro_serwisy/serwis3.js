@@ -1,14 +1,14 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-const bookRoutes = require('./routes/users');
+const usersRoutes = require('./routes/users');
 const sequelize = require("./data_models/usersdb_config");
 
 const app = express();
 const PORT = 5000;
 
 app.use(bodyParser.json());
-app.use('/api', bookRoutes);
+app.use('/api', usersRoutes);
 app.use(express.json());
 
 

@@ -71,7 +71,4 @@ router.delete('/users/:id', authenticateToken, async (req, res) => {
     }
 });
 
-// PATCH /api/users/:id - Aktualizacja danych
-
-
 module.exports = router;
