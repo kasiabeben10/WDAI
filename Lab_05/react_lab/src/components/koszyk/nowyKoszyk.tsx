@@ -6,7 +6,7 @@ const NowyKoszyk: React.FC = () => {
 
   return (
     <div>
-      <h1>Nowy Koszyk</h1>
+      <h3>Nowy Koszyk</h3>
       {produkty.map((nazwa, index) => (
         <Produkt key={index} nazwa={nazwa} />
       ))}

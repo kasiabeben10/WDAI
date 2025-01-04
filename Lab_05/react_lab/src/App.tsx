@@ -1,10 +1,7 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import Koszyk from "./components/koszyk/koszyk"
 import NowyKoszyk from "./components/koszyk/nowyKoszyk"
-// import Licznik from "./components/liczniki/licznik"
+import { default as Licznik1 } from "./components/liczniki/licznik"
 import NowyLicznik from "./components/liczniki/nowyLicznik"
 import Formularz from './components/formularze/formularz';
 import Haslo from './components/formularze/haslo';
@@ -20,46 +17,39 @@ import Komentarze from './components/produkty/Komentarze';
 
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
       <div>
+        <h2>Zadanie 1.1 Koszyk</h2>
         <Koszyk />
+        <h2>Zadanie 1.2 Nowy Koszyk</h2>
         <NowyKoszyk />
-        <Licznik />
+        <h2>Zadanie 2.1 Licznik</h2>
+        <Licznik1 />
+        <h2>Zadanie 2.2 Nowy Licznik</h2>
         <NowyLicznik />
+        <h2>Zadanie 3.1 Formularz</h2>
         <Formularz />
+        <h2>Zadanie 3.2 Hasło</h2>
         <Haslo />
+        <h2>Zadanie 3.3 Logowanie</h2>
         <Logowanie />
+        <h2>Zadanie 4.1 Ternary</h2>
         <Ternary />
+        <h2>Zadanie 4.2 Aktualizacja</h2>
         <Aktualizcja />
+        <h2>Zadanie 5.1 Studenci</h2>
         <Studenci />
+        <h2>Zadanie 5.2 StudentManager</h2>
         <StudentManager />
+        <h2>Zadanie 6.1 Licznik</h2>
+        <Licznik />
+        <h2>Zadanie 6.2 Tytul</h2>
         <Tytul />
+        <h2>Zadanie 6.3 Odliczanie</h2>
         <Odliczanie />
+        <h2>Zadanie 7 Komentarze</h2>
         <Komentarze />
-
       </div>
     </>
   )

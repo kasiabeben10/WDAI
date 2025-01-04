@@ -11,7 +11,7 @@ const Tytul: React.FC = () => {
 
     return (
         <>
-            <label>Tytuł:</label>
+            <label>Tytuł: </label>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
         </>
     )

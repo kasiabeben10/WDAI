@@ -25,7 +25,6 @@ const Komentarze = () => {
 
     return (
         <div>
-            <h1>Komentarze</h1>
             {komentarze.map((komentarz: Komentarz) => (
                 <Komentarz key={komentarz.id} {...komentarz} />
             ))}

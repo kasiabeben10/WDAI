@@ -4,7 +4,7 @@ import Produkt from './produkt';
 const Koszyk: React.FC = () => {
   return (
     <div>
-      <h1>Koszyk</h1>
+      <h3>Koszyk</h3>
       <Produkt nazwa="Jabłko" />
       <Produkt nazwa="Gruszka" />
       <Produkt nazwa="Kiwi" />

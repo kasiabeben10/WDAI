@@ -18,12 +18,12 @@ const Komentarz: React.FC<Comment> = ({id, body, postId, likes, user}: Comment) 
 
     return (
         <div>
-            <h1> Komentarz nr {id}, post {postId}</h1>
+            <h3> Komentarz nr {id}, post {postId}</h3>
             <p>{user.id} {user.username} - {user.fullName} </p>
             <p>{body}</p>
             <p>{likesCnt} likes</p>
-            <button onClick={() => setLikesCnt(likesCnt + 1)}>Like</button>
-            <button onClick={() => setLikesCnt(likesCnt - 1)}>Dislike</button>
+            <button onClick={() => setLikesCnt(likesCnt + 1)} style={{margin: '2px', width:'100px'}}>Like</button>
+            <button onClick={() => setLikesCnt(likesCnt - 1)} style={{margin: '2px', width:'100px'}}>Dislike</button>
         </div>
     )
 }
