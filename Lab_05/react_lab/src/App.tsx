@@ -4,13 +4,19 @@
 import './App.css'
 import Koszyk from "./components/koszyk/koszyk"
 import NowyKoszyk from "./components/koszyk/nowyKoszyk"
-import Licznik from "./components/liczniki/licznik"
+// import Licznik from "./components/liczniki/licznik"
 import NowyLicznik from "./components/liczniki/nowyLicznik"
 import Formularz from './components/formularze/formularz';
 import Haslo from './components/formularze/haslo';
 import Logowanie from './components/formularze/logowanie';
 import Ternary from './components/inne/ternary'
 import Aktualizcja from './components/inne/aktualizacja'
+import Studenci from './components/studenci/Studenci'
+import StudentManager from './components/studenci/StudentManager'
+import Licznik from './components/efekty/Licznik'
+import Tytul from './components/efekty/Tytul'
+import Odliczanie from './components/efekty/Odliczanie';
+import Komentarze from './components/produkty/Komentarze';
 
 
 function App() {
@@ -48,7 +54,11 @@ function App() {
         <Logowanie />
         <Ternary />
         <Aktualizcja />
-
+        <Studenci />
+        <StudentManager />
+        <Tytul />
+        <Odliczanie />
+        <Komentarze />
 
       </div>
     </>
